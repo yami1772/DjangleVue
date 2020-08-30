@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "3.1"
+pymysql = "*"
+six = "*"
+cryptography = "*"
+djangorestframework = "*"
+djangorestframework-jwt = "*"
+django-cors-headers = "*"
+
+[requires]
+python_version = "3.7.7"

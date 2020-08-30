@@ -29,7 +29,9 @@ SECRET_KEY = '=xi)%a^&etcu*70krsn=g%thqs8ee*l*4)x&^0+d@g7yb=^7x5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '118.89.236.242'
+    ]
 
 
 # Application definition
@@ -166,5 +168,5 @@ JWT_AUTH = {
 }
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:8080',
+    'http://127.0.0.1:8080',
 )
