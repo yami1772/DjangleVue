@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'myjgvue.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql', # 数据库引擎
+        'NAME': 'login', # 数据库名
+        'USER': 'root', # 账号
+        'PASSWORD': 'qwe123qwe', # 密码
+        'HOST': '127.0.0.1', # HOST
+        'POST': 3306, # 端口
     }
 }
 
@@ -103,9 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia-Shanghai'
 
 USE_I18N = True
 

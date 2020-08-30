@@ -1,6 +1,7 @@
 {
     "python.pythonPath": "/root/miniconda3/envs/jg/bin/python",
     "python.linting.pylintEnabled": false,
-    "python.linting.mypyEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.mypyEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.banditEnabled": true
 }
