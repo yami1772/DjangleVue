@@ -36,7 +36,7 @@ class studentUnion(models.Model):
     # 社团人数
     unionNum = models.IntegerField('人数', default=0)
     # 社团负责人 关联Student的主键 即studentNum学号 一对一的关系,on__delete 属性在django2.0之后为必填属性后面会介绍
-    unionRoot = models.OneToOneField(Student, on_delete=None)
+    unionRoot = models.OneToOneField(Student, on_delete = models.CASCADE)
 
     class Meta:
         db_table = 'student_union'

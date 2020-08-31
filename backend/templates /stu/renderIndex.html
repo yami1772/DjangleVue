@@ -1,0 +1,9 @@
+{% if Student_list %}
+    <ul>
+    {% for stu in Student_list %}
+        <li><a href="/backend/{{ stu.studentNum }}/">{{ <stu class="studentName"></stu> }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Student Found.</p>
+{% endif %}

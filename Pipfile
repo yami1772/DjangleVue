@@ -9,6 +9,9 @@ verify_ssl = true
 django = "*"
 pymysql = "*"
 mysqlclient = "*"
+request = "*"
+requests = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
